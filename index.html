@@ -1,324 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JuegaFacil - Juegos en línea gratis instantáneos</title>
-    <meta name="description" content="JuegaFacil ofrece los mejores juegos en línea gratuitos que puedes jugar instantáneamente sin descargas. Disfruta de nuestra colección de juegos casuales para todas las edades.">
-    <link rel="canonical" href="https://juegafacil.online">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'apple-blue': '#007AFF',
-                        'apple-green': '#34C759',
-                        'apple-indigo': '#5856D6',
-                        'apple-orange': '#FF9500',
-                        'apple-pink': '#FF2D55',
-                        'apple-purple': '#AF52DE',
-                        'apple-red': '#FF3B30',
-                        'apple-teal': '#5AC8FA',
-                        'apple-yellow': '#FFCC00',
-                        'apple-gray': '#8E8E93',
-                        'apple-bg': '#F2F2F7',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JuegaFácil - Juegos Gratis</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-apple-bg min-h-screen">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-6">
-            <nav class="flex flex-col md:flex-row justify-between items-center">
-                <div class="flex items-center mb-4 md:mb-0">
-                    <a href="/" class="flex items-center">
-                        <span class="text-3xl font-bold text-apple-blue">Juega<span class="text-apple-red">Facil</span></span>
-                    </a>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#games" class="text-gray-600 hover:text-apple-blue transition-colors">Juegos</a>
-                    <a href="#about" class="text-gray-600 hover:text-apple-blue transition-colors">Acerca de</a>
-                    <a href="#popular" class="text-gray-600 hover:text-apple-blue transition-colors">Populares</a>
-                    <a href="#contact" class="text-gray-600 hover:text-apple-blue transition-colors">Contacto</a>
-                </div>
-            </nav>
+<body>
+  <div class="container">
+    <!-- 左侧导航栏 -->
+    <aside class="sidebar">
+      <h2>Categorías</h2>
+      <ul>
+        <li><a href="#accion">⚔️ Acción</a></li>
+        <li><a href="#puzzle">🧠 Puzzle</a></li>
+        <li><a href="#aventura">🗺️ Aventura</a></li>
+        <li><a href="#deportes">🏀 Deportes</a></li>
+      </ul>
+    </aside>
+
+    <!-- 右侧内容区 -->
+    <main class="content">
+      <!-- Acción -->
+      <section id="accion">
+        <h3>⚔️ Acción</h3>
+        <div class="game-card">
+          <h4>Viking Siege</h4>
+          <p>Defiende tu aldea contra los invasores vikingos.</p>
+          <iframe src="https://games.gamezop.com/g/Skb4k1fyz" loading="lazy"></iframe>
         </div>
-    </header>
+        <div class="game-card">
+          <h4>Kingdom Fight 2.0</h4>
+          <p>Conquista reinos y expande tu imperio.</p>
+          <iframe src="https://games.gamezop.com/g/Hkz4k1fyz" loading="lazy"></iframe>
+        </div>
+      </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="py-12 md:py-20 bg-gradient-to-r from-apple-blue to-apple-indigo text-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-4xl md:text-6xl font-bold mb-6">Juega Gratis en Línea con JuegaFacil</h1>
-                    <p class="text-xl md:text-2xl mb-8">Tu destino para juegos rápidos, divertidos y gratuitos en el navegador - ¡sin descargas necesarias!</p>
-                    <a href="#featured-game" class="bg-white text-apple-blue font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">Jugar Ahora</a>
-                </div>
-            </div>
-        </section>
+      <!-- Puzzle -->
+      <section id="puzzle">
+        <h3>🧠 Puzzle</h3>
+        <div class="game-card">
+          <h4>Templok</h4>
+          <p>Coloca las piezas en el lugar correcto para ganar.</p>
+          <iframe src="https://games.gamezop.com/g/Byb4k1fyz" loading="lazy"></iframe>
+        </div>
+        <div class="game-card">
+          <h4>Slide And Divide</h4>
+          <p>Desliza y divide para resolver el rompecabezas.</p>
+          <iframe src="https://games.gamezop.com/g/Hyf4k1fyz" loading="lazy"></iframe>
+        </div>
+      </section>
 
-        <!-- Featured Game Section -->
-        <section id="featured-game" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Juego Destacado</h2>
-                <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="aspect-w-16 aspect-h-9">
-                        <iframe 
-                            class="w-full h-[500px] md:h-[600px]" 
-                            src="https://cloud.onlinegames.io/games/2021/unity3/masked-forces-zombie-survival/index.html" 
-                            frameborder="0" 
-                            scrolling="no" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Masked Forces Zombie Survival</h3>
-                        <p class="text-gray-600 mb-4">Prepárate para sobrevivir a la invasión de zombis. En un mundo post-apocalíptico dominado por zombis, incluso una breve duda al dispararles te hará terminar como ellos.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <span class="mr-4"><span class="font-semibold">Categoría:</span> Acción, Supervivencia</span>
-                            <span><span class="font-semibold">Jugadores:</span> Multijugador</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Aventura -->
+      <section id="aventura">
+        <h3>🗺️ Aventura</h3>
+        <div class="game-card">
+          <h4>Dragon Annihilation</h4>
+          <p>Embárcate en una aventura épica para derrotar dragones.</p>
+          <iframe src="https://games.gamezop.com/g/Syf4k1fyz" loading="lazy"></iframe>
+        </div>
+        <div class="game-card">
+          <h4>Harbor Dash</h4>
+          <p>Navega por el puerto evitando obstáculos.</p>
+          <iframe src="https://games.gamezop.com/g/Hkf4k1fyz" loading="lazy"></iframe>
+        </div>
+      </section>
 
-        <!-- Game Categories -->
-        <section id="games" class="py-16 bg-apple-bg">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Categorías de Juegos</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <a href="#" class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <div class="bg-apple-red h-32 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-800">Acción</h3>
-                            <p class="text-sm text-gray-600">42 juegos</p>
-                        </div>
-                    </a>
-                    <a href="#" class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <div class="bg-apple-blue h-32 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                            </svg>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-800">Rompecabezas</h3>
-                            <p class="text-sm text-gray-600">38 juegos</p>
-                        </div>
-                    </a>
-                    <a href="#" class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <div class="bg-apple-green h-32 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-800">Arcade</h3>
-                            <p class="text-sm text-gray-600">56 juegos</p>
-                        </div>
-                    </a>
-                    <a href="#" class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <div class="bg-apple-purple h-32 flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-bold text-gray-800">Estrategia</h3>
-                            <p class="text-sm text-gray-600">29 juegos</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-gray-800">Acerca de JuegaFacil</h2>
-                    <div class="prose lg:prose-xl mx-auto text-gray-600">
-                        <p class="mb-4">JuegaFacil (que significa "Juega Fácil" en español) es tu destino definitivo para juegos en línea gratuitos que puedes jugar instantáneamente en tu navegador. Nuestra plataforma está diseñada para proporcionar acceso rápido a juegos divertidos y atractivos sin necesidad de descargas o instalaciones.</p>
-                        <p class="mb-4">Cuidadosamente seleccionamos nuestra colección para incluir los mejores juegos basados en navegador en varias categorías como acción, rompecabezas, estrategia, arcade y más. Ya sea que tengas solo unos minutos libres o estés buscando horas de entretenimiento, JuegaFacil tiene algo para todos.</p>
-                        <p>Nuestra misión es hacer que los juegos sean accesibles para todos, en cualquier lugar y en cualquier dispositivo. Es por eso que todos nuestros juegos están optimizados tanto para jugar en escritorio como en móvil, garantizando una experiencia de juego fluida independientemente de cómo elijas conectarte.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Popular Games -->
-        <section id="popular" class="py-16 bg-apple-bg">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Juegos Populares</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/729/responsive/Drift-King-xs.jpg" alt="Drift King" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">Drift King</h3>
-                            <p class="text-gray-600 mb-4">Drift King destaca entre los juegos de derrape en línea, ofreciendo una experiencia única donde puedes ver el humo que dejas atrás desde la ventana trasera.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors">Jugar Ahora</a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/32/responsive/Highway-Traffic-2-xs.jpg" alt="Highway Traffic" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">Highway Traffic</h3>
-                            <p class="text-gray-600 mb-4">El juego Highway Traffic se centra en conducir por la autopista, esquivando otros autos y evitando accidentes.</p>
-                            <a href="#" class="inline-block bg-apple-green text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors">Jugar Ahora</a>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/310/responsive/Masked-Special-Forces-FPS-xs.jpg" alt="Masked Special Forces" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="font-bold text-xl mb-2 text-gray-800">Masked Special Forces</h3>
-                            <p class="text-gray-600 mb-4">Masked Special Forces es un juego de disparos en primera persona multijugador con una gran cantidad de opciones de personalización.</p>
-                            <a href="#" class="inline-block bg-apple-red text-white font-bold py-2 px-4 rounded-lg hover:bg-red-600 transition-colors">Jugar Ahora</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Games Grid Section -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Todos los Juegos</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <!-- Game 1 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/1015/responsive/apocalypse-truck-xs.jpg" alt="Apocalypse Truck" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Apocalypse Truck</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Cuando el virus golpeó, las ciudades se derrumbaron, la gente desapareció. Tu única esperanza es un camión monstruo destartalado.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 2 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/1012/responsive/Kick-The-Pirate-xs.jpg" alt="Kick the Pirate" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Kick the Pirate</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">¡Ahoy marinero! Los piratas pueden ser valientes en alta mar, pero nunca te han conocido a ti.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 3 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/1011/responsive/Julie-Beauty-Salon-xs.jpg" alt="Julie Beauty Salon" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Julie Beauty Salon</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Julie Beauty Salon es un juego de cambio de imagen glamuroso donde diriges un salón de belleza.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 4 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/1010/responsive/Mini-Cars-Racing-xs.jpg" alt="Mini Cars Racing" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Mini Cars Racing</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Mini Cars Racing es un juego de carreras de autos para 2 jugadores que puedes jugar gratis en OnlineGames.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 5 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/1006/responsive/pyramid-Solitaire-xs.jpg" alt="Pyramid Solitaire" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Pyramid Solitaire</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Pyramid Solitaire es un juego de cartas en línea gratuito. En este rompecabezas de cartas relajante, debes eliminar una pirámide de cartas.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 6 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/1007/responsive/solitaire-xs.jpg" alt="Solitaire" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Solitaire</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">La tarde de Emma llegó a un muro exactamente a las 3:17 PM. Su bandeja de entrada sonó de nuevo, otra tarea urgente de su gerente.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 7 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/152/responsive/love-tester-xs.jpg" alt="Love Tester" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Love Tester</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">¿Quieres saber cuánto se enamora tu crush de ti? Aquí hay una forma de probar el amor del único y exclusivo.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                    
-                    <!-- Game 8 -->
-                    <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="https://www.onlinegames.io/media/posts/979/responsive/fast-food-rush-xs.jpg" alt="Fast Food Rush" class="w-full h-40 object-cover">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg mb-1 text-gray-800">Fast Food Rush</h3>
-                            <p class="text-gray-600 text-sm mb-3 line-clamp-2">Estás en Burger King, hundiendo los dientes en una jugosa hamburguesa con queso y terminándola en unos 15 minutos.</p>
-                            <a href="#" class="inline-block bg-apple-blue text-white text-sm font-bold py-1 px-3 rounded-lg hover:bg-blue-600 transition-colors">Jugar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-10">
-                    <a href="#" class="bg-apple-indigo text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-600 transition-colors">Ver Más Juegos</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter -->
-        <section class="py-16 bg-gradient-to-r from-apple-indigo to-apple-purple text-white">
-            <div class="container mx-auto px-4">
-                <div class="max-w-2xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Mantente Actualizado</h2>
-                    <p class="text-xl mb-8">Suscríbete a nuestro boletín para recibir actualizaciones sobre nuevos juegos y ofertas exclusivas.</p>
-                    <form class="flex flex-col md:flex-row gap-4 justify-center">
-                        <input type="email" placeholder="Tu dirección de correo" class="px-4 py-3 rounded-lg text-gray-800 w-full md:w-auto">
-                        <button type="submit" class="bg-white text-apple-indigo font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors">Suscribirse</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+      <!-- Deportes -->
+      <section id="deportes">
+        <h3>🏀 Deportes</h3>
+        <div class="game-card">
+          <h4>Football Kickoff</h4>
+          <p>Demuestra tus habilidades en el campo de fútbol.</p>
+          <iframe src="https://games.gamezop.com/g/Skf4k1fyz" loading="lazy"></iframe>
+        </div>
+        <div class="game-card">
+          <h4>Bowling Stars</h4>
+          <p>¡Haz un strike en cada lanzamiento!</p>
+          <iframe src="https://games.gamezop.com/g/Hyb4k1fyz" loading="lazy"></iframe>
+        </div>
+      </section>
     </main>
-
-    <footer id="contact" class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">JuegaFacil</h3>
-                    <p class="text-gray-400">Tu destino para juegos en línea gratuitos que puedes jugar instantáneamente sin descargas.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Enlaces Rápidos</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Inicio</a></li>
-                        <li><a href="#games" class="text-gray-400 hover:text-white transition-colors">Juegos</a></li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Acerca de</a></li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contacto</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contáctanos</h3>
-                    <p class="text-gray-400 mb-2">¿Tienes preguntas o sugerencias?</p>
-                    <a href="mailto:info@juegafacil.online" class="text-apple-blue hover:underline">info@juegafacil.online</a>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 JuegaFacil.online. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+  </div>
 </body>
 </html>
